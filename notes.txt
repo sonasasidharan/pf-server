@@ -1,0 +1,70 @@
+cors-mechanisam for intergrating applications
+        npm i cors
+DOTenv-a  package for loading  .env contents into process object in node.js
+        npm i dotenv
+
+
+software architecture:
+1.model view controler(MVC)
+    used in back end 
+2.modal view template(MVT)
+    used in front end 
+    ex:-jango used mvt
+
+
+    mongodb 
+    its a non relational,nosql based,document based,open source dbms  
+    -faster
+    -scalable
+    -document based:json documents data will be stored as key-value pair
+    -schema less
+
+
+    mysql                mongodb
+    -------------------------------
+    -database            -database
+    -table                -collection
+    -row/tuple/entity     -document
+    -column               -feilds
+    -primary key          -_id (12 bit hexadecemal value for every document which is unique)
+
+
+    Mongoose ->its a ODM library:
+    ----------------------------
+
+    -object data modelling library for mongodb and node.js
+    -used to translate  objects in node app and represention of those objects in mongodb
+    -defines schema/structure for storing documents in a collection of mongodb          
+                schema types(String,Number,Default...)
+                options(required,default)
+   -create models similar to collections where we can store documents
+   -install Mongoose
+                npm i Mongoose
+   -create connection
+                -create folder in server:DB folder
+                -create a js file to define connection
+
+
+jwt(json web token)
+
+-mechanisam ised for authentication
+-need json webtoken pacage
+-generate a token value if a given credentials for authentication is valid ,and pass it to user side
+-every request from user side after authentication will need token value with it,only after verifying that
+
+
+
+->middleware:
+-special functions that can process  requests in between client and server,and block the request if they needed to 
+                const middleware=(req,res,next)=>{
+                        req
+                        next()
+                }
+->application level middleware
+->router specific middleware
+
+
+MULTER:-
+install-npm i multer
+
+
